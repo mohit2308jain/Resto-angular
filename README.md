@@ -1,5 +1,7 @@
 # Resto
 
+This repo contains the assignment for the Front-End JavaScript Frameworks: Angular course on 'coursera.org'.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server
