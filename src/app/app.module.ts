@@ -6,6 +6,7 @@ import { DishService } from "./services/dish.service";
 import { PromotionService } from "./services/promotion.service";
 import { LeaderService } from "./services/leader.service";
 import { ProcessHttpMsgService } from "./services/process-http-msg.service";
+import { FeedbackService } from "./services/feedback.service";
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -38,6 +39,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -50,7 +52,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
@@ -80,6 +83,7 @@ import { LoginComponent } from './login/login.component';
     PromotionService,
     LeaderService,
     ProcessHttpMsgService,
+    FeedbackService,
     { provide: 'BaseURL', useValue: baseURL }
   ],
   bootstrap: [AppComponent],
